@@ -1,15 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import LoginPage from './pages/Login';
+import { initializeApp } from 'firebase/app';
+import { config } from './config/config';
+import AuthRoute from './components/AuthRoute';
+
+initializeApp(config.firebaseConfig);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Shift Leader</h1>
-        <p>A cool new app!</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <AuthRoute>
+              <HomePage />
+            </AuthRoute>
+          }
+        />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Firebase Setup
+
+### Firebase hosting with GitHub Actions
+
+[ShiftLeader on GitHub](https://github.com/cfmarr/shiftleader)
+
+[Guide on Medium](https://medium.com/firebase-developers/the-comprehensive-guide-to-github-actions-and-firebase-hosting-818502d86c31)
+
+### Firebase 9 Authentication
+
+[Sign in with Google Tutorial](https://www.youtube.com/watch?v=b_52NmIfDr8)
